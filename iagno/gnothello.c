@@ -266,7 +266,7 @@ about_cb (GtkAction * action, gpointer data)
 			 "name", _(APP_NAME_LONG),
 			 "version", VERSION,
        "modal", TRUE,
-       "title", "L:A_D:application_ID:iagnoAbout",       
+       "title", "L:A_D:application_PC:T_ID:iagnoAbout",       
 			 "copyright",
 			 "Copyright \xc2\xa9 1998-2008 Ian Peters",
        /* this buttons open windows the user wont't be able to close */

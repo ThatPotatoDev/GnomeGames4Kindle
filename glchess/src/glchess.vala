@@ -816,7 +816,7 @@ public class Application
             dialog.add_button (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL);
             dialog.add_button ("_Abandon game", Gtk.ResponseType.NO);
             // dialog.add_button ("_Save game for later", Gtk.ResponseType.YES); // file picker not working, no keyboard, etc. (awesomewm) But doable.
-            dialog.set_title ("L:A_D:application_ID:glchessDialog");
+            dialog.set_title ("L:A_D:application_PC:T_ID:glchessDialog");
             var result = dialog.run ();
             dialog.destroy ();
             if (result == Gtk.ResponseType.CANCEL)
@@ -1004,7 +1004,7 @@ public class Application
 
         preferences_dialog.transient_for = window;
         preferences_dialog.modal = true;
-        preferences_dialog.title = "L:A_D:application_ID:glchessDialog";
+        preferences_dialog.title = "L:A_D:application_PC:T_ID:glchessDialog";
 
         settings.bind ("show-numbering", preferences_builder.get_object ("show_numbering_check"),
                        "active", SettingsBindFlags.DEFAULT);
@@ -1366,7 +1366,7 @@ public class Application
         about_dialog.logo_icon_name = "glchess";
         about_dialog.response.connect (about_response_cb);
         about_dialog.show ();
-        about_dialog.set_title ("L:A_D:application_ID:glchessDialog");
+        about_dialog.set_title ("L:A_D:application_PC:T_ID:glchessDialog");
     }
     
     private void about_response_cb (int response_id)

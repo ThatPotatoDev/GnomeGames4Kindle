@@ -146,7 +146,7 @@ games_show_error (GtkWidget *window,
   gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
                                             "%s", error->message);
 
-  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_ID:gamesShowDialog");
+  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_PC:T_ID:gamesShowDialog");
 
   g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_destroy), NULL);
 

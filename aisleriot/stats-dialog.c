@@ -205,7 +205,7 @@ AisleriotStatsDialog *
 aisleriot_stats_dialog_new (void)
 {
   return g_object_new (AISLERIOT_TYPE_STATS_DIALOG,
-                       "title", "L:A_D:application_ID:aisleriotStatistics",
+                       "title", "L:A_D:application_PC:T_ID:aisleriotStatistics",
                        NULL);
 }
 

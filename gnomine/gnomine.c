@@ -217,7 +217,7 @@ show_scores (gint pos, gboolean endofgame)
 			      GTK_RESPONSE_ACCEPT, NULL);
       gtk_dialog_set_default_response (GTK_DIALOG (sorrydialog),
 				       GTK_RESPONSE_ACCEPT);
-      gtk_window_set_title (GTK_WINDOW (sorrydialog), "L:A_D:application_ID:gnominesMinesScores");
+      gtk_window_set_title (GTK_WINDOW (sorrydialog), "L:A_D:application_PC:T_ID:gnominesMinesScores");
     }
     dialog = sorrydialog;
   } else {
@@ -225,7 +225,7 @@ show_scores (gint pos, gboolean endofgame)
     if (scoresdialog != NULL) {
       gtk_window_present (GTK_WINDOW (scoresdialog));
     } else {
-      scoresdialog = games_scores_dialog_new (GTK_WINDOW (window), highscores, "L:A_D:application_ID:gnominesMinesScores");
+      scoresdialog = games_scores_dialog_new (GTK_WINDOW (window), highscores, "L:A_D:application_PC:T_ID:gnominesMinesScores");
       games_scores_dialog_set_category_description (GAMES_SCORES_DIALOG
 						    (scoresdialog),
 						    _("Size:"));
@@ -359,7 +359,7 @@ hint_callback (void)
                                                GTK_DIALOG_MODAL,
                                                GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
                                                message, NULL);
-  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_ID:gnomineDialog");
+  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_PC:T_ID:gnomineDialog");
   gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 
   disable_hiding = TRUE;
@@ -507,7 +507,7 @@ about_callback (void)
 			 "name", APP_NAME_LONG,
 			 "version", VERSION,
        "modal", TRUE,
-       "title", "L:A_D:application_ID:gnominesAbout",
+       "title", "L:A_D:application_PC:T_ID:gnominesAbout",
 			 "comments",
 			 _("The popular logic puzzle minesweeper. "
 			   "Clear mines from a board using hints from "
@@ -773,7 +773,7 @@ create_preferences (void)
 
   gtk_table_attach_defaults (GTK_TABLE (table), frame, 0, 2, 2, 3);
 
-  pref_dialog = gtk_dialog_new_with_buttons ("L:A_D:application_ID:gnominePreferences",
+  pref_dialog = gtk_dialog_new_with_buttons ("L:A_D:application_PC:T_ID:gnominePreferences",
 					     GTK_WINDOW (window),
 					     0,
 					     GTK_STOCK_CLOSE,

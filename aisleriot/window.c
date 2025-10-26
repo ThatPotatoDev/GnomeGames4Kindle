@@ -443,7 +443,7 @@ help_about_cb (GtkAction *action,
                             priv->freecell_mode ? _("FreeCell Solitaire")
                                                 : _("AisleRiot"),
                          "version", VERSION,
-                         "title", "L:A_D:application_ID:aisleriotAbout",
+                         "title", "L:A_D:application_PC:T_ID:aisleriotAbout",
 #ifndef HAVE_HILDON
                          /* The long text makes the dialogue too large under maemo */
                          "comments",
@@ -1054,7 +1054,7 @@ show_hint_cb (GtkAction *action,
                                                GTK_MESSAGE_INFO,
                                                GTK_BUTTONS_OK,
                                                "<b>%s</b>", message);
-  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_ID:aisleriotHint");
+  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_PC:T_ID:aisleriotHint");
   gtk_window_set_modal (GTK_WINDOW (dialog), TRUE);
 
   gtk_widget_show (dialog);
